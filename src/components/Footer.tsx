@@ -25,6 +25,7 @@ export default function Footer() {
                 { href: "/merge", label: "Merge PDF" },
                 { href: "/split", label: "Split PDF" },
                 { href: "/compress", label: "Compress PDF" },
+                { href: "/sign", label: "Sign PDF" },
                 { href: "/image-to-pdf", label: "Image to PDF" },
                 { href: "/pdf-to-image", label: "PDF to Image" },
                 { href: "/rotate", label: "Rotate PDF" },

@@ -11,6 +11,7 @@ export default function Navbar() {
     { href: "/merge", label: "Merge PDF" },
     { href: "/split", label: "Split PDF" },
     { href: "/compress", label: "Compress PDF" },
+    { href: "/sign", label: "Sign PDF" },
     { href: "/image-to-pdf", label: "Image → PDF" },
     { href: "/pdf-to-image", label: "PDF → Image" },
     { href: "/rotate", label: "Rotate PDF" },
