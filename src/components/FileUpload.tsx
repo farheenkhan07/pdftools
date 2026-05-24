@@ -36,7 +36,7 @@ export default function FileUpload({
   const [error, setError] = useState<string | null>(null);
 
   const onDrop = useCallback(
-    (accepted: File[], rejected: { errors: { message: string }[] }[]) => {
+    (accepted: File[], rejected: { errors: readonly { message: string }[] }[]) => {
       setError(null);
       if (rejected.length > 0) {
         const msg = rejected[0].errors[0].message;
