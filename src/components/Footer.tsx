@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { FileText, Github } from "lucide-react";
-
+import { FileText } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 mt-16">

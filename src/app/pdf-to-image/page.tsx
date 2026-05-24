@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { Image, Download, Loader2 } from "lucide-react";
 import ToolPageLayout from "@/components/ToolPageLayout";
 import FileUpload from "@/components/FileUpload";
@@ -112,7 +112,6 @@ export default function PdfToImagePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {images.map((img, i) => (
               <div key={i} className="group relative rounded-xl overflow-hidden border border-slate-200">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={img} alt={`Page ${i + 1}`} className="w-full object-cover" />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <button
