@@ -1,4 +1,7 @@
+"use client";
+
 import { Loader2 } from "lucide-react";
+import { track } from "@vercel/analytics";
 
 interface ProcessButtonProps {
   onClick: () => void;
@@ -6,6 +9,7 @@ interface ProcessButtonProps {
   disabled: boolean;
   label: string;
   loadingLabel?: string;
+  trackEvent?: string;
 }
 
 export default function ProcessButton({
@@ -14,10 +18,18 @@ export default function ProcessButton({
   disabled,
   label,
   loadingLabel = "Processing…",
+  trackEvent,
 }: ProcessButtonProps) {
+  const handleClick = () => {
+    if (trackEvent) {
+      track(trackEvent);
+    }
+    onClick();
+  };
+
   return (
     <button
-      onClick={onClick}
+      onClick={handleClick}
       disabled={disabled || loading}
       className={`w-full flex items-center justify-center gap-2 py-4 px-6 rounded-xl font-semibold text-lg transition-all
         ${disabled || loading

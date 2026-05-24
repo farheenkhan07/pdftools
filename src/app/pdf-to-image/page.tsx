@@ -173,6 +173,7 @@ export default function PdfToImagePage() {
             disabled={files.length === 0}
             label="Convert to Images"
             loadingLabel="Converting…"
+            trackEvent="pdf_to_image"
           />
         </>
       )}

@@ -213,6 +213,7 @@ export default function SignPage() {
             disabled={!canSign}
             label="Apply Signature to PDF"
             loadingLabel="Signing…"
+            trackEvent="sign_pdf"
           />
 
           {!signature && files.length > 0 && (

@@ -91,6 +91,7 @@ export default function ImageToPdfPage() {
             disabled={files.length === 0}
             label={`Convert to PDF`}
             loadingLabel="Converting…"
+            trackEvent="image_to_pdf"
           />
         </>
       )}

@@ -87,6 +87,7 @@ export default function MergePage() {
             disabled={files.length < 2}
             label={`Merge ${files.length > 0 ? files.length : ""} PDFs`}
             loadingLabel="Merging…"
+            trackEvent="merge_pdf"
           />
 
           {files.length < 2 && files.length > 0 && (

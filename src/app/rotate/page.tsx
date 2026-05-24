@@ -170,6 +170,7 @@ export default function RotatePage() {
             disabled={!canProcess}
             label="Rotate PDF"
             loadingLabel="Rotating…"
+            trackEvent="rotate_pdf"
           />
         </>
       )}

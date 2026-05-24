@@ -118,6 +118,7 @@ export default function CompressPage() {
             disabled={files.length === 0}
             label="Compress PDF"
             loadingLabel="Compressing…"
+            trackEvent="compress_pdf"
           />
         </>
       )}

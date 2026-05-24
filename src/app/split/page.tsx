@@ -138,6 +138,7 @@ export default function SplitPage() {
             disabled={!canProcess}
             label="Split PDF"
             loadingLabel="Splitting…"
+            trackEvent="split_pdf"
           />
         </>
       )}
