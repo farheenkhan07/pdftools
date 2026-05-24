@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
     copiedPages.forEach((page) => newPdf.addPage(page));
 
     const bytes = await newPdf.save();
-    return new NextResponse(bytes, {
+    return new NextResponse(Buffer.from(bytes), {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": 'attachment; filename="split.pdf"',

@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
       objectsPerTick: 50,
     });
 
-    return new NextResponse(bytes, {
+    return new NextResponse(Buffer.from(bytes), {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": 'attachment; filename="compressed.pdf"',
